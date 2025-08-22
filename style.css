@@ -1,0 +1,91 @@
+      :root {
+        --bg-color: #111111;
+        --bg-color-container: rgba(28, 28, 30, 0.85);
+        --bg-color-button: #2c2c2e;
+        --text-color: #ffffff;
+        --text-color-secondary: #a7a7a7;
+        --border-color: #3c3c3e;
+        --font: 'Poppins', sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: var(--font);
+        background-color: var(--bg-color);
+        background-image: url('/assets/bg.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 420px;
+        width: 100%;
+        background-color: var(--bg-color-container);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border-color);
+      }
+
+      .header {
+        text-align: center;
+        padding: 10px 0 20px 0;
+      }
+
+      .profile-pic {
+        width: 290px;
+        padding-bottom: 30px;
+      }
+
+      .username {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .welcome-message {
+        font-size: 1.1rem;
+        color: var(--text-color-secondary);
+        margin: 5px 0 15px 0;
+      }
+
+      .links-list a {
+        display: block;
+        text-align: center;
+        background-color: var(--bg-color-button);
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 15px 20px;
+        margin: 15px 0;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        border: 1px solid var(--border-color);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+
+      .links-list a:hover {
+        transform: scale(1.03);
+        background-color: #3a3a3c;
+      }
+
+      .links-list a span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .links-list a svg {
+        width: 22px;
+        height: 22px;
+      }
