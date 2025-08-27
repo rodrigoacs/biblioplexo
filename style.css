@@ -127,6 +127,11 @@ body::before {
   border-color: rgba(255, 123, 0, 0.466);
 }
 
+#twitch:hover {
+  background-color: rgba(153, 0, 255, 0.1);
+  border-color: rgba(153, 0, 255, 0.466);
+}
+
 
 @keyframes subirDescer {
   0% {
