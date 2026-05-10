@@ -62,12 +62,11 @@ body::before {
 
 .header {
   text-align: center;
-  padding: 10px 0 20px 0;
 }
 
 .profile-pic {
-  width: 290px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 290px;
   height: auto;
 }
 
@@ -90,7 +89,7 @@ body::before {
   color: var(--text-color);
   text-decoration: none;
   padding: 15px 20px;
-  margin: 15px 0;
+  margin-bottom: 15px;
   border-radius: 12px;
   font-size: 1.25rem;
   border: 1px solid var(--border-color);
@@ -110,8 +109,8 @@ body::before {
 }
 
 .links-list a svg {
-  width: 22px;
-  height: 22px;
+  width: 1.25em;
+  height: 1.25em;
 }
 
 #arena:hover {
@@ -158,6 +157,18 @@ body::before {
   }
 }
 
+@media (max-height: 700px) {
+  body {
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+}
+
 @media (max-width: 480px) {
   body {
     padding: 10px;
@@ -171,7 +182,7 @@ body::before {
   }
 
   .profile-pic {
-    width: 220px;
+    max-width: 220px;
   }
 
   .username {
